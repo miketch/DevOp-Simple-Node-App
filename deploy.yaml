@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simple-node-app-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: simple-node-app
+  template:
+    metadata:
+      labels:
+        app: simple-node-app
+    spec:
+      containers:
+        - image: 850598408435.dkr.ecr.us-west-2.amazonaws.com/simple-node-app:v1
+          imagePullPolicy: Always
+          name: simple-node-app
+          ports:
+            - containerPort: 8080
+
+
+

@@ -1,11 +1,17 @@
+In this project you I apply the skills and knowledge which were developed throughout the Cloud DevOps Nanodegree program. These include:
 
+Working in AWS
+Using Jenkins to implement Continuous Integration and Continuous Deployment
+Building pipelines
+Working with Ansible and CloudFormation to deploy clusters
+Building Kubernetes clusters
+Building Docker containers in pipelines
 
 <h2>
   Cloud Formation
 </h2>
 
 eksctl create cluster -f cluster.yaml
-
 
 
 <h2>
